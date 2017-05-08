@@ -1,0 +1,19 @@
+{
+  "name": "canine-connect",
+  "version": "2.0.0",
+  "description": "Final project v2.0 for Rich Media II",
+  "main": "./server/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VLesnar/canine-connect.git"
+  },
+  "author": "Veronica Lesnar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VLesnar/canine-connect/issues"
+  },
+  "homepage": "https://github.com/VLesnar/canine-connect#readme"
+}
