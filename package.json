@@ -1,10 +1,19 @@
 {
   "name": "canine-connect",
   "version": "2.0.0",
+  "engines": {
+    "node": "7.5.0",
+    "npm": "4.0.5"
+  },
   "description": "Final project v2.0 for Rich Media II",
   "main": "./server/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "gulp watch",
+    "build": "gulp build",
+    "nodemon": "nodemon --watch ./server ./server/app.js ",
+    "start": "node ./server/app.js",
+    "pretest": "eslint ./server --fix",
+    "test": "echo \"Tests complete\""
   },
   "repository": {
     "type": "git",
@@ -15,5 +24,21 @@
   "bugs": {
     "url": "https://github.com/VLesnar/canine-connect/issues"
   },
-  "homepage": "https://github.com/VLesnar/canine-connect#readme"
+  "homepage": "https://github.com/VLesnar/canine-connect#readme",
+  "dependencies": {
+    "compression": "^1.6.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-nodemon": "^2.2.1",
+    "nodemon": "^1.11.0"
+  }
 }
